@@ -1,0 +1,1 @@
+ALTER TABLE "fundpitch_userTypeChangeRequests" ADD COLUMN "made_by" uuid;

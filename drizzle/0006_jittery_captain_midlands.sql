@@ -1,0 +1,1 @@
+ALTER TABLE "fundpitch_companyInvites" ADD COLUMN "is_user_declined" boolean DEFAULT false;

@@ -1,0 +1,1 @@
+ALTER TABLE "fundpitch_companyInvites" ADD COLUMN "mtalkz_response" jsonb;

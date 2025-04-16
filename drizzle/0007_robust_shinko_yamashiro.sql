@@ -1,0 +1,1 @@
+ALTER TABLE "fundpitch_companyKeyManagament" ADD COLUMN "order" integer DEFAULT 0;

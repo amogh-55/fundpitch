@@ -1,0 +1,1 @@
+ALTER TABLE "fundpitch_companyUser" ADD COLUMN "founder_name" text;

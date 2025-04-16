@@ -1,0 +1,1 @@
+ALTER TABLE "fundpitch_companyInvites" ALTER COLUMN "parent_invite_id" SET DATA TYPE text;
