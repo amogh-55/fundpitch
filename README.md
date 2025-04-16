@@ -48,7 +48,7 @@ pnpm run dev
 Or with npm:
 
 npm run dev
-Environment Variables
+Environment Variables------------------------------------------------->
 Create a .env file in the root directory and provide the following environment variables. Replace placeholder values with your actual credentials:
 
 # PostgreSQL Database
@@ -73,6 +73,8 @@ WAP_URL=your_wap_url
 # Brevo SMTP
 BREVO_USER=your_email
 BREVO_PASSWORD=your_brevo_password
+-------------------------------------------------------------------->
+
 Note: After updating .env, make sure to restart the development server.
 
 
