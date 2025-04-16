@@ -1,29 +1,78 @@
-# Create T3 App
+FundPitch is a real-time collaboration and funding platform designed to bridge the gap between startup founders and essential collaborators — from investors and advisors to consultants and service providers. This platform enables early-stage startups to showcase their ideas, connect with relevant stakeholders, and initiate funding or advisory conversations in a streamlined and organized manner.
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+The core features include Expressions — a dynamic system that allows collaborators to express interest in real-time, send offers, or even record and send personalized audio messages; a secure document sharing system that allows founders to upload pitch decks, term sheets, and business plans; and a live collaboration dashboard that tracks engagement and keeps communication transparent and actionable. Stakeholders can manage access levels, track touchpoints, and engage in structured interactions — all from one place.
 
-## What's next? How do I make an app with this?
+FundPitch is built with a modern and scalable tech stack. The frontend is developed using Next.js for server-side rendering and Tailwind CSS for styling. The backend uses PostgreSQL as the primary database, integrated through both Prisma ORM and Drizzle ORM for type-safe querying and schema control. For authentication, the app uses NextAuth, providing secure login flows and role-based access management. File storage is handled via Cloudflare R2, while communication services are powered by Amazon SES, Brevo SMTP, and mTalkz WhatsApp API.
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+Prerequisites
+Before you begin, ensure you have the following installed on your machine:
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+Node.js
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+pnpm (preferred) or npm
 
-## Learn More
+Any code editor (e.g., VS Code)
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+Installation and Setup
+Clone the repository:
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+git clone https://github.com/your-username/fundpitch.git
+cd fundpitch
+Install dependencies:
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+pnpm i
+If pnpm is not installed, you can use npm:
 
-## How do I deploy this?
+npm install
+Start the development server:
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+pnpm run dev
+Or with npm:
+
+npm run dev
+Environment Variables
+Create a .env file in the root directory and provide the following environment variables. Replace placeholder values with your actual credentials:
+
+# PostgreSQL Database
+DATABASE_URL="postgresql://your_user:your_password@your_host/your_database"
+
+# Amazon SES (for emails)
+SES_USER=your_ses_user
+SES_PASSWORD=your_ses_password
+
+# Cloudflare R2 (for file storage)
+CLOUDFLARE_R2_ACCESS_KEY_ID=your_access_key_id
+CLOUDFLARE_R2_SECRET_ACCESS_KEY=your_secret_key
+CLOUDFLARE_R2_ENDPOINT=your_endpoint_url
+
+# mTalkz WhatsApp Messaging
+MTALKZ_API_KEY=your_mtalkz_api_key
+WAP_SENDER_PHONE=your_registered_whatsapp_number
+WAP_SENDER_NAME=your_business_name
+WAP_KEY=your_wap_key
+WAP_URL=your_wap_url
+
+# Brevo SMTP
+BREVO_USER=your_email
+BREVO_PASSWORD=your_brevo_password
+Note: After updating .env, make sure to restart the development server.
+
+Tech Stack
+Frontend: Next.js
+
+Styling: Tailwind CSS
+
+Backend: PostgreSQL
+
+ORMs: Prisma, Drizzle
+
+Authentication: NextAuth.js
+
+Email Services: Amazon SES, Brevo SMTP
+
+File Storage: Cloudflare R2
+
+Messaging Service: mTalkz WhatsApp API
+
+License
+This project is licensed under the MIT License.
