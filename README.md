@@ -115,7 +115,3 @@ BREVO_PASSWORD=your_brevo_password
 ## 📄 License
 
 This project is licensed under the **MIT License**.
-
----
-
-Let me know if you’d like to include sections for features, usage, deployment, contribution guidelines, or screenshots!
