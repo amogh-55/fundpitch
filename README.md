@@ -13,6 +13,24 @@ pnpm (preferred) or npm
 
 Any code editor (e.g., VS Code)
 
+Tech Stack
+Frontend: Next.js
+
+Styling: Tailwind CSS
+
+Backend: PostgreSQL
+
+ORMs: Prisma, Drizzle
+
+Authentication: NextAuth.js
+
+Email Services: Amazon SES, Brevo SMTP
+
+File Storage: Cloudflare R2
+
+Messaging Service: mTalkz WhatsApp API
+
+
 Installation and Setup
 Clone the repository:
 
@@ -57,22 +75,4 @@ BREVO_USER=your_email
 BREVO_PASSWORD=your_brevo_password
 Note: After updating .env, make sure to restart the development server.
 
-Tech Stack
-Frontend: Next.js
 
-Styling: Tailwind CSS
-
-Backend: PostgreSQL
-
-ORMs: Prisma, Drizzle
-
-Authentication: NextAuth.js
-
-Email Services: Amazon SES, Brevo SMTP
-
-File Storage: Cloudflare R2
-
-Messaging Service: mTalkz WhatsApp API
-
-License
-This project is licensed under the MIT License.
